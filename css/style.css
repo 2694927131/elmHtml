@@ -1,0 +1,260 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+body{
+    font-size: 14px;
+}
+a{
+    text-decoration:none;
+    color: #333;
+}
+li{
+    list-style: none;
+}
+.top{
+    background-color: #0097ff;
+    display: flex;
+    color:white ;
+    height: 60px;
+    font-size: 20px;
+    align-items: center;
+   padding: 0 10px;
+}
+.search{
+    background-color: #0097ff ;
+    height: 60px;
+    overflow: hidden;
+    //解决外边距插线问题
+}
+.search-box{
+    height: 40px;
+    background-color: white ;
+    width: 90%;
+    margin: 10px auto;
+    border-radius: 3px;
+    color: #aeaeae;
+    text-align: center;
+    line-height: 40px;
+    /*单行文本垂直方向居中*/
+}
+
+.foodType{
+    padding: 20px 0;
+}
+.foodType ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.foodType ul li{
+    width: 20%;
+    text-align: center;
+    color: #666666;
+    margin-top: 10px;
+}
+.foodType ul li img{
+    width: 60%;
+}
+.quality{
+   padding: 0 10px;
+
+}
+.q-box{
+    background: url("../img/index_banner.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /*height: 140px;*/
+    padding: 15px 30px;
+    box-sizing: border-box;
+/*//既可以图片又可以颜色//*/
+}
+.q-box p:nth-of-type(1){
+    color: #666666;
+    margin: 10px 0 20px;
+
+}
+.q-box p:nth-of-type(2){
+    color: #c79060;
+    font-size: 14px;
+
+}
+.recom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+}
+.recom>span{
+    width: 40px;
+    height: 1px;
+    background: #888888;
+}
+.recom h3{
+    margin: 0 15px;
+}
+.supermember{
+    padding: 0 10px;
+    margin-top: 10px;
+}
+.s_box{
+    background: #feedc1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.s_box .s_left{
+    display: flex;
+    align-items: center;
+}
+.s_box .s_left img{
+    width: 35px;
+}
+.s_box .s_left p{
+color: #644f1b;
+}
+.s_box .s_left h3{
+font-size: 24px;
+    margin: 0 5px;
+}
+.s_box .s_right{
+    color: #644f1b;
+}
+.b_type{
+    padding: 0 10px;
+    color: #555555;
+    background: white;
+}
+.b_type ul{
+ display: flex;
+}
+.b_type ul li{
+    flex-grow: 1;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+
+.businesslist>ul>li{
+    display: flex;
+    padding: 10px 10px;
+    border-bottom: 1px solid #dddddd;
+}
+.businesslist>ul>li>img{
+   width: 80px;
+    height: 80px;
+
+}
+.businesslist>ul>li .bl-right{
+    flex-grow: 1;
+    margin-left: 15px;
+}
+.businesslist .bl-right>div{
+    display: flex;
+    justify-content: space-between;
+}
+.businesslist .title h3{
+    font-size: 18px;
+}
+.businesslist .title span{
+    font-size: 40px;
+    width: 10px;
+    line-height: 20px;
+    height: 20px;
+    background: #666666;
+    color: white;
+    margin-right: 30px;
+
+}
+.businesslist .start{
+    color: #666666;
+    margin: 5px 0;
+}
+.businesslist .start i{
+    color: #fec80e;
+}
+
+.businesslist .start .start-right{
+ background: #0097ff;
+    color: white;
+    padding: 0 3px;
+}
+
+.businesslist .bl-a{
+    color: #666666;
+}
+.businesslist .bl-food{
+    color: #666666;
+    margin: 5px 0;
+}
+.businesslist .bl-food span{
+    border:1px solid #f2f2f2;
+}
+.businesslist .bl-new{
+    color: #666666;
+}
+.businesslist .new-left{
+    display: flex;
+}
+.businesslist .new-left span{
+    background: #70bc46;
+    color: #ffffff;
+    padding: 0 3px;
+    margin-right: 5px;
+}
+.businesslist .new-left sp{
+    background: #f1884f;
+
+}
+
+
+
+
+.footer{
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #999999;
+    border-top: 1px solid #ddd;
+    padding: 10px 0;
+    z-index: 5;
+    background: white;
+}
+.footer>ul{
+    display: flex;
+}
+.footer>ul li{
+   flex-grow: 1;
+    text-align: center;
+}
+.footer i{
+    font-size: 22px;
+}
+.wrapper{
+    /*将整体内容向上移动*/
+    /*底部导航栏footer的高度*/
+    margin-bottom: 66px;
+    overflow: hidden;
+}
+.toTop{
+    width: 60px;
+    height: 60px;
+    border: 1px solid #d0d0d0;
+    color: #999999;
+    position: fixed;
+        right: 30px;
+        bottom: 100px;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    opacity: 0;
+       transition: .5s;
+
+
+}
+.toTop i{
+    font-size: 30px;
+}
+

@@ -1,0 +1,127 @@
+
+h1{
+    position: fixed;
+    background-color: #0097ff;
+    color:white ;
+    height: 60px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    line-height: 60px;
+    padding: 0 10px;
+    font-weight: normal;
+    z-index: 5;
+}
+.address{
+    margin-top: 60px;
+    background-color: #0097ef;
+    color: white;
+    height: 100px;
+
+}
+.address>div{
+    margin-left: 5px;
+    padding: 5px 0;
+}
+.address .a{
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+   // margin-left: 5px;
+}
+
+.address .a .a-left{
+    width: 80%;
+
+}
+.address .a .a-right{
+    width: 20%;
+    //flex-grow: 1;
+    text-align: right;
+   padding-left: 2px;
+}
+.name{
+    border-bottom: 1px solid #dddddd;
+
+}
+.name>h3{
+    font-size: 20px;
+    margin: 10px 5px;
+}
+
+.cost>ul>li{
+    display: flex;
+    padding: 10px 10px;
+   // border-bottom: 1px solid #dddddd;
+}
+.cost>ul>li>img{
+    width: 50px;
+    height: 50px;
+
+}
+.cost>ul>li .c-right{
+    flex-grow: 1;
+    margin-left: 15px;
+    display: flex;
+    height: 50px;
+    line-height: 50px;
+    font-size: 17px;
+}
+.cost>ul>li .c-right>div{
+    /*display: flex;*/
+    justify-content: space-between;
+}
+.cost>ul>li .c-right .cost-left{
+    width: 80%;
+}
+.cost>ul>li .c-right .cost-right{
+    flex-grow: 1;
+    text-align: right;
+}
+
+.pay{
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    color: white;
+    border-top: 1px solid #ddd;
+    //padding:  0 10px;
+    /*注意顺序----------------------------------------------------*/
+    z-index: 5;
+//background: black;
+    display: flex;
+}
+.pay .pay-left{
+//text-align: center;
+    position: relative;
+    width: 70%;
+    background-color: #505051;
+    display: flex;
+}
+.pay-txt{
+    margin: auto;
+}
+.pay-txt>p{
+    color: white;
+    font-size: 20px;
+
+}
+.pay .pay-right{
+    text-align: center;
+    line-height: 60px;
+    font-size: 20px;
+    width: 30%;
+    background-color: forestgreen;
+}
+
+.wrapper{
+    /*将整体内容向上移动*/
+    /*底部导航栏footer的高度*/
+    margin-bottom: 60px;
+    overflow: hidden;
+}

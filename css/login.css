@@ -1,0 +1,64 @@
+
+h1{
+    position: fixed;
+    background-color: #0097ff;
+    color:white ;
+    height: 60px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    line-height: 60px;
+    padding: 0 10px;
+    font-weight: normal;
+    z-index: 5;
+}
+.com{
+    //margin: 60px 0;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    color: #666666;
+    border: 1px solid transparent;
+    font-size: 15px;
+    /*    给父级边框避免没有参照系*/
+}
+.com>div{
+    display: flex;
+    margin: 15px 0;
+}
+.com .com-left{
+    width: 25%;
+    color: black;
+}
+.com .com-right{
+    flex-grow: 1;
+}
+.com .com-right input{
+    border: none;
+    outline: none;
+    /*width: 100%;*/
+// height: 32px;
+}
+.login>h2{
+    background-color: #38ca73;
+    text-align: center;
+    color: white;
+//width: 95%;
+    height: 60px;
+    border-radius: 5px;
+    line-height: 60px;
+    margin: 0 5px;
+}
+.sign>h2{
+    background-color: #eeeeee;
+    text-align: center;
+    color: #666666;
+//width: 95%;
+    height: 60px;
+    border-radius: 5px;
+    line-height: 60px;
+    margin: 10px 5px;
+}

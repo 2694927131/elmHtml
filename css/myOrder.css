@@ -1,0 +1,52 @@
+
+h1{
+    position: fixed;
+    background-color: #0097ff;
+    color:white ;
+    height: 60px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    line-height: 60px;
+    padding: 0 10px;
+    font-weight: normal;
+    z-index: 5;
+}
+.my_order{
+    width: 93%;
+    margin: 60px auto 0;
+    border-top: 1px solid transparent;
+    color: #666666;
+    font-size: 16px;
+}
+.order_box{
+    margin-bottom: 30px;
+}
+.order_box>p{
+    margin: 20px 0;
+    color: #999999;
+}
+.order_box .o_info{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+.order_box .info_r span{
+    background: #ff9900;
+    color: white;
+}
+.o_info .info_d{
+    width: 100%;
+    display: none;
+}
+.o_info .o_detail{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin: 5px 0;
+}

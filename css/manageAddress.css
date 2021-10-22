@@ -1,0 +1,71 @@
+body{
+    background-color: #f5f5f5;
+}
+h1{
+    position: fixed;
+    background-color: #0097ff;
+    color:white ;
+    height: 60px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    line-height: 60px;
+    padding: 0 10px;
+    font-weight: normal;
+    z-index: 5;
+}
+.com{
+   //margin: 60px 0;
+    margin-top: 60px;
+    //padding: 0 10px;
+    color: #666666;
+    border: 1px solid transparent;
+    font-size: 15px;
+    /*    给父级边框避免没有参照系*/
+    background-color: white;
+}
+.com>div{
+    display: flex;
+    margin: 15px 0;
+    
+    border-bottom: 1px solid  #dddddd;
+}
+.com>ul>li{
+    display: flex;
+    margin: 15px 0;
+    border-bottom: 1px solid  #dddddd;
+    justify-content: space-between;
+
+}
+.com>ul>li .com-left{
+    width: 75%;
+    color: black;
+    padding: 0 9px;
+}
+.com>ul>li .com-left p:nth-of-type(1){
+font-size: 20px;
+}
+.com>ul>li .com-left p:nth-of-type(2){
+    font-size: 15px;
+    font-weight: bold;
+}
+.com>ul>li .com-right{
+    flex-grow: 1;
+    text-align: center;
+    margin-top: 10px;
+}
+.add{
+    width: 100%;
+    background-color: white;
+    color: #0097ff;
+    text-align: center;
+    border: 1px solid  #dddddd;
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+    margin-top: 10px;
+
+}
