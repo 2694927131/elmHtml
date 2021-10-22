@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/myOrder.css">
+</head>
+<body>
+<h1>我的订单</h1>
+
+<!--//老师写的可以用来收缩内容的order界面-->
+<div class="my_order">
+    <div class="order_box">
+        <p>未支付订单信息：</p>
+        <div class="o_info">
+            <div class="info_l">
+                万家饺子
+                <i class="iconfont icon-xiangxia"></i>
+            </div>
+            <div class="info_r">
+                ￥49
+                <span>去支付</span>
+            </div>
+            <div class="info_d">
+                <div class="o_detail">
+                    <div class="info_l">
+                        万家饺子
+                        <span>X2</span>
+                    </div>
+                    <div class="info_r">
+                        ￥49
+                    </div>
+                </div>
+                <div class="o_detail">
+                    <div class="info_l">
+                        万家饺子
+                        <span>X2</span>
+                    </div>
+                    <div class="info_r">
+                        ￥49
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="o_info">
+            <div class="info_l">
+                万家饺子
+                <i class="iconfont icon-xiangxia"></i>
+            </div>
+            <div class="info_r">
+                ￥49
+                <span>去支付</span>
+            </div>
+            <div class="info_d">
+                <div class="o_detail">
+                    <div class="info_l">
+                        万家饺子
+                        <span>X2</span>
+                    </div>
+                    <div class="info_r">
+                        ￥49
+                    </div>
+                </div>
+                <div class="o_detail">
+                    <div class="info_l">
+                        万家饺子
+                        <span>X2</span>
+                    </div>
+                    <div class="info_r">
+                        ￥49
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="order_box">
+        <p>已支付订单信息：</p>
+        <div class="o_info">
+            <div class="info_l">
+                万家饺子
+                <i class="iconfont icon-xiangxia"></i>
+            </div>
+            <div class="info_r">
+                ￥49
+                <span>去支付</span>
+            </div>
+            <div class="info_d">
+                <div class="o_detail">
+                    <div class="info_l">
+                        万家饺子
+                        <span>X2</span>
+                    </div>
+                    <div class="info_r">
+                        ￥49
+                    </div>
+                </div>
+                <div class="o_detail">
+                    <div class="info_l">
+                        万家饺子
+                        <span>X2</span>
+                    </div>
+                    <div class="info_r">
+                        ￥49
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- 底部导航栏部分 -->
+<div class="footer">
+    <ul>
+        <li>
+            <i class="iconfont icon-ai-home"></i>
+            <p>首页</p>
+        </li>
+        <li>
+            <i class="iconfont icon-faxian"></i>
+            <p>发现</p>
+        </li>
+        <li>
+            <i class="iconfont icon-dingdan01"></i>
+            <p>订单</p>
+        </li>
+        <li>
+            <i class="iconfont icon-biaoqiankuozhan_wode-310"></i>
+            <p>我的</p>
+        </li>
+    </ul>
+</div>
+<script>
+    var oInfo=document.getElementsByClassName('o_info');
+    console.log(oInfo);
+    var num=0;
+    for(var i=0;i<oInfo.length;i++){
+        console.log(oInfo[i].children[0].children[0]);
+        oInfo[i].children[0].children[0].onclick=function(){
+            num++;
+            // console.log(this.parentNode.parentNode.children[2]);
+            if(num%2==1){
+                this.parentNode.parentNode.children[2].style.display='block';
+            }else{
+                this.parentNode.parentNode.children[2].style.display='none';
+            }
+        }
+    }
+</script>
+</body>
+</html>
